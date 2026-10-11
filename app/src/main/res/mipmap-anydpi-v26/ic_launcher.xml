@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  自适应图标。
+
+  底板色取自原项目 DownKyi logo 的精确主色（#79CBDE），前景为 logo 图形。
+  图形本身已占安全区约 66%，圆形与方形遮罩下边缘都能自然融合。
+
+  额外声明 monochrome：Android 13+ 的「主题图标」功能会用它配合系统配色，
+  缺少这一项时系统只能退回旧版图标渲染。
+-->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/ic_launcher_background" />
+    <foreground android:drawable="@mipmap/ic_launcher_foreground" />
+    <monochrome android:drawable="@mipmap/ic_launcher_foreground" />
+</adaptive-icon>

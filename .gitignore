@@ -1,0 +1,29 @@
+# 构建产物
+*.iml
+.gradle/
+build/
+local.properties
+.idea/
+.DS_Store
+captures/
+.externalNativeBuild/
+.cxx/
+.kotlin/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+release/
+
+# 参考源码（仅本地调研用，不参与构建，也不应进入版本库）
+_reference/
+
+# 真机验证截图（临时产物）
+_shots/
+
+# 日志
+*.log

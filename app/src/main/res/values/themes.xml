@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+      基础窗口主题。
+
+      Compose 接管全部界面绘制，这里只负责「窗口本身」的表现：
+      - 无 ActionBar：标题栏由 Compose 自绘（Liquid Glass 导航栏）
+      - 透明系统栏：内容延伸到状态栏 / 导航栏后方，由 Compose 通过 WindowInsets 处理留白
+      - 窗口背景与主题底色一致，避免启动瞬间闪白（浅色）/ 闪黑（深色）
+
+      具体配色在 Compose 侧的设计系统里定义（core:designsystem），
+      这里只是启动窗口的兜底底色。
+    -->
+    <style name="Theme.ReDownKyi" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+
+</resources>

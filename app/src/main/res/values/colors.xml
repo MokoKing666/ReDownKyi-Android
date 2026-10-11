@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 启动窗口兜底底色（与设计系统的浅色页面底色一致），避免启动瞬间闪白/闪黑 -->
+    <color name="window_background">#F2F2F7</color>
+
+    <!-- 启动图标底板色：取自原项目 DownKyi logo 的精确主色 -->
+    <color name="ic_launcher_background">#FF79CBDE</color>
+</resources>
